@@ -1,0 +1,8 @@
+django==1.11
+django-extensions
+django-environ
+django-braces
+psycopg2
+pdbpp
+yapf
+

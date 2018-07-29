@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+	<form action="" method="post" enctype="multipart/form-data">
+	    {% csrf_token %}
+	    
+	    <div class="form-group">
+	    <input type="file" name="p_img" class="form-control br-radius-zero" placeholder="Product Image" />
+	    </div>
+
+	    <div class="form-group">
+	    <input type="text" name="p_name" class="form-control br-radius-zero" placeholder="Product Name " />
+	    </div>
+
+	    <div class="form-group">
+	    <input type="text" class="form-control br-radius-zero" name="p_price" placeholder="Enter Price" />
+	    </div>
+
+	    <div class="form-group">
+	    <textarea class="form-control br-radius-zero" name="p_desc" placeholder="Descriptions"></textarea>
+	     </div>
+
+	     <div class="form-group">
+	    <input type="text" class="form-control br-radius-zero" name="p_rating" id="p_rating" placeholder="*****"/>
+	    </div>
+
+	    <div class="form-action">
+	    <button type="submit" class="btn btn-danger">Submit</button>
+	    </div>
+
+	 </form>
+</div>
+{% endblock %}
+
